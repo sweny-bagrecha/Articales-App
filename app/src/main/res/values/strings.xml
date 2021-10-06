@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">My Beautiful Shop</string>
+    <string name="app_name">Articles Headlines App</string>
+    <string name="error">Error</string>
+    <string name="headlines">Headlines</string>
+    <string name="sources">Sources</string>
+    <string name="saves">Saves</string>
 </resources>

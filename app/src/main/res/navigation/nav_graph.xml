@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_register_graph"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.medibank.shop.MainActivity"
+        tools:layout="@layout/activity_main">
+        <fragment
+            android:id="@+id/headlineFragment"
+            android:name="com.medibank.shop.fragment.HeadlineFragment"
+            tools:layout="@layout/fragment_webview">
+        </fragment>
+        <fragment
+            android:id="@+id/sourcesFragment"
+            android:name="com.medibank.shop.fragment.SourcesFragment"
+            tools:layout="@layout/fragment_webview">
+        </fragment>
+        <fragment
+            android:id="@+id/savedFragment"
+            android:name="com.medibank.shop.fragment.SavedFragment"
+            tools:layout="@layout/fragment_webview">
+        </fragment>
+    </activity>
+    <fragment
+        android:id="@+id/headline_fragment"
+        android:name="com.medibank.shop.fragment.HeadlineFragment"
+        tools:layout="@layout/fragment_headline">
+        <action
+            android:id="@+id/action_headline_to_web"
+            app:destination="@id/webviewFragment">
+        <argument
+            android:name="url"
+            app:argType="string"
+            />
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/saved_fragment"
+        android:name="com.medibank.shop.fragment.SavedFragment"
+        tools:layout="@layout/fragment_saved">
+        <action
+            android:id="@+id/action_saved_to_web"
+            app:destination="@id/webviewFragment">
+            <argument
+                android:name="url"
+                app:argType="string"
+                />
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/webviewFragment"
+        android:name="com.medibank.shop.fragment.WebviewFragment"
+        tools:layout="@layout/fragment_webview">
+        <argument
+            android:name="url"
+            app:argType="string"
+            />
+    </fragment>
+
+</navigation>
