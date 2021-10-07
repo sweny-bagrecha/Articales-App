@@ -39,8 +39,9 @@ Create a proof of concept for an App that displays trend articles and allow the 
 - Please provide submission no more than 3 days after received.
 - Submissions will only be accepted via GitHub or Bitbucket.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------
 
-Note from Sweny Bagrecha - Android Developer
+**Note from Sweny Bagrecha - Android Developer**
 
 - Made use of Clean Architecture structure
 - Design Architecture Used: MVVM
